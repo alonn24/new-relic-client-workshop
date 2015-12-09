@@ -45,7 +45,7 @@ var questions = {
 		name    : 'answer',
 		message : 'Enter your answer for Q3:',
 		validate: function (input) {
-			var valid = contains(input, '(filter(uniqueCount(session), WHERE actionName=\'error\')/uniquecount(session))') &&
+			var valid = contains(input, '(filter(uniqueCount(session), WHERE actionName=\'error\')/uniqueCount(session))') &&
 				contains(input, 'PageView') &&
 				contains(input, 'PageAction');
 			if (valid) {
