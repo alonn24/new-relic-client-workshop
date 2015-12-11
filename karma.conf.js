@@ -6,8 +6,10 @@ module.exports = function(config) {
 			'bower_components/angular/angular.js',
 			'bower_components/angular-mocks/angular-mocks.js',
 			'lib/*.js',
-			'workshop/**/index.js',
-			'workshop/**/index.test.js'
+			'workshop/**/*.js'
+		],
+		exclude: [
+			'**/*.conf.js'
 		],
 		reporters: ['progress'],
 		port: 8000,

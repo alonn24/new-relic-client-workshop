@@ -9,18 +9,18 @@ angular
 		}
 	})
 	.config(function (NREUMWrapperProvider) {
-		// setCustomAttribute staticsUrl to http://statics.com/projects/version/
+		// setCustomAttribute here using NREUMWrapperProvider
 	})
 	.service('NREUMService', function (NREUMWrapper) {
 		this.addPageAction = function (actionName, actionValue) {
-			// add actionName with 'value' column to be actionValue
+			// addPageAction here using NREUMWrapper
 		};
 
 		this.reportError = function (errorMessage) {
-			// report new Error(errorMessage). don't forget to report to Insights also!
+			// reportError here using NREUMWrapper
 		};
 
 		this.load = function () {
-			// report the finished event
+			// report finished here using NREUMWrapper
 		};
 	});
