@@ -20,7 +20,7 @@ Edit `NREUM.js` with:
 
 1. setCustomAttribute - tag the current session with `staticsUrl` that maps to `http://statics.com/projects/version/` in the config phase.
 2. addPageAction - the user did something that you want to know of! report the `actionName` given with a `value` column. 
-3. reportError - oh no! There was an error! report the error to New Relic Browser <strong>and Insights</strong> with a `message` column.
+3. noticeError - oh no! There was an error! report the error to New Relic Browser <strong>and Insights</strong> with a `message` column.
 4. report finished - report the finished event when your data loaded.  
 
 ## Check yourself
